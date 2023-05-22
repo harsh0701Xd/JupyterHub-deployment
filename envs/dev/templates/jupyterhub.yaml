@@ -9,7 +9,7 @@ spec:
     namespace: default
   source:
     repoURL: https://github.com/harsh0701Xd/JupyterHub-deployment.git
-    path: /  # Update this with the appropriate path
+    path: envs/dev/templates  # Update this with the appropriate path
     targetRevision: HEAD
   project: default
   syncPolicy:
