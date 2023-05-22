@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: jupyterhub
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
 spec:
   replicas: 1
   selector:
@@ -13,10 +15,7 @@ spec:
         app: jupyterhub
     spec:
       containers:
-        - name: jupyterhub
-          image: jupyterhub/jupyterhub:latest
-          ports:
-            - containerPort: 8000
-          env:
-            - name: JUPYTERHUB_AUTHenticator_class
-              value: jupyterhub.auth.DummyAuthenticator
+      - name: jupyterhub
+        image: jupyterhub/jupyterhub:latest
+        ports:
+        - containerPort: 8000
