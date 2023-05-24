@@ -16,14 +16,9 @@ spec:
     spec:
       containers:
         - name: jupyterhub
-          image: jupyterhub/jupyterhub:1.4.2
+          image: jupyterhub/jupyterhub:latest
           ports:
             - containerPort: 8000
-          env:
-            - name: JUPYTERHUB_CRYPT_KEY
-              value: "APQT"
-            - name: JUPYTERHUB_AUTHENTICATOR_CLASS
-              value: "dummyauthenticator.DummyAuthenticator"
           resources:
             limits:
               cpu: "1"
