@@ -8,7 +8,7 @@ spec:
   destination:
     server: https://kubernetes.default.svc
   source:
-    repoURL: https://github.com/harsh0701Xd/JupyterHub-deployment.git
+    repoURL: https://github.com/harsh0701Xd/JupyterHub-deployment.git # Insert your own github repository here
     targetRevision: main
 
   # Thoses default values can be surcharged by Infrastructure as Code
