@@ -8,7 +8,7 @@ spec:
     server: https://kubernetes.default.svc
     namespace: default
   source:
-    repoURL: https://github.com/harsh0701Xd/JupyterHub-deployment.git
+    repoURL: https://github.com/harsh0701Xd/JupyterHub-deployment.git # Insert your own Github repository here
     path: teams/team-a/dev  # Update this with the appropriate path
     targetRevision: HEAD
   project: default
