@@ -26,3 +26,8 @@ spec:
             requests:
               cpu: "500m"
               memory: "500Mi"
+          env:
+            - name: ACCESS_TOKEN
+              value: "password"
+            - name: USERNAME
+              value: "admin"
